@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFRWIDGETS · Widgets de escritorio para Windows, ligeros y gratis</title>
+  <meta name="description" content="Trece widgets para el escritorio de Windows con seis estéticas: tiempo, disco, Google Calendar, reloj, música y más. Nativos, gratis y de código abierto. 6,1 MB de memoria con todos abiertos.">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/proyecto/afrwidgets/icon-64.png" type="image/png">
+  <link rel="preload" href="/proyecto/afrwidgets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/proyecto/afrwidgets/img/lago-2400.webp" as="image" imagesrcset="/proyecto/afrwidgets/img/lago-800.webp 800w, /proyecto/afrwidgets/img/lago-1400.webp 1400w, /proyecto/afrwidgets/img/lago-2400.webp 2400w" imagesizes="(max-width: 640px) 270vw, (max-width: 1100px) 100vw, 1100px">
+  <link rel="stylesheet" href="/proyecto/afrwidgets/estilo.css?v=14">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AFRWIDGETS · Widgets de escritorio para Windows">
+  <meta property="og:description" content="Trece widgets, seis estéticas y 6,1 MB de memoria con todos abiertos.">
+  <meta property="og:image" content="https://pedrogomez.dev/proyecto/afrwidgets/og.jpg">
+  <meta property="og:url" content="https://pedrogomez.dev/proyecto/afrwidgets/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="module" src="/proyecto/afrwidgets/escaparate.js?v=11"></script>
+</head>
+<body>
+  <a class="saltar" href="#inicio">Saltar al contenido</a>
+
+  <nav class="global" aria-label="Sitio">
+    <div class="global-in">
+      <a href="/">pedrogomez.dev</a>
+      <a href="/#proyectos">Proyectos</a>
+    </div>
+  </nav>
+
+  <nav class="sub" aria-label="AFRWIDGETS">
+    <div class="sub-in">
+      <a class="sub-nombre" href="#inicio">AFRWIDGETS</a>
+      <div class="sub-links">
+        <a href="#esteticas">Estéticas</a>
+        <a href="#widgets">Widgets</a>
+        <a href="#ligereza">Ligereza</a>
+        <a href="#instalar">Instalar</a>
+        <a class="pill pill-sm" href="/proyecto/afrwidgets/descargas/AFRWIDGETS-Setup-1.0.0.exe" download>Descargar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="tile tile-light hero" id="inicio" aria-labelledby="titulo">
+      <div class="hero-texto">
+        <h1 id="titulo">Widgets de escritorio para Windows que casi no pesan.</h1>
+        <p class="lead">Trece widgets, seis estéticas y 6,1&nbsp;MB de memoria con todos abiertos. Gratis y de código abierto.</p>
+        <div class="acciones">
+          <a class="pill" href="/proyecto/afrwidgets/descargas/AFRWIDGETS-Setup-1.0.0.exe" download>Descargar gratis</a>
+          <a class="enlace" href="#esteticas">Ver las estéticas</a>
+        </div>
+        <p class="letra">Windows 10 y 11 · Instalador de 2,3&nbsp;MB · Sin permisos de administrador</p>
+      </div>
+
+      <figure class="pantalla" data-entra>
+        <img class="pantalla-fondo" src="/proyecto/afrwidgets/img/lago-2400.webp" srcset="/proyecto/afrwidgets/img/lago-800.webp 800w, /proyecto/afrwidgets/img/lago-1400.webp 1400w, /proyecto/afrwidgets/img/lago-2400.webp 2400w" sizes="(max-width: 640px) 270vw, (max-width: 1100px) 100vw, 1100px" width="2400" height="1350" alt="" fetchpriority="high">
+        <img class="w p1" src="/proyecto/afrwidgets/w/reloj-2-aire.webp" width="720" height="340" alt="Reloj en palabras, estética Aire: son las once menos veinte de la mañana">
+        <img class="w p2" src="/proyecto/afrwidgets/w/sistema-0-aire.webp" width="340" height="340" alt="Sistema en Aire: CPU al 20 % y memoria al 58 %">
+        <img class="w p3" src="/proyecto/afrwidgets/w/tiempo-1-noche.webp" width="720" height="340" alt="Tiempo en Madrid en estética Noche: 14 grados y previsión de cinco días">
+        <img class="w p4" src="/proyecto/afrwidgets/w/calendario-0-grotesca.webp" width="340" height="340" alt="Calendario en Grotesca: martes 17 de noviembre">
+        <img class="w p5" src="/proyecto/afrwidgets/w/bateria-0-noche.webp" width="340" height="340" alt="Batería en Noche: 76 %">
+        <img class="w p6" src="/proyecto/afrwidgets/w/musica-1-noche.webp" width="720" height="340" alt="Música en Noche: Mar de fondo, de Las Lindes">
+      </figure>
+    </section>
+
+    <section class="tile tile-dark" id="esteticas" aria-labelledby="esteticas-titulo">
+      <div class="centro">
+        <h2 id="esteticas-titulo">Seis estéticas. Un mismo escritorio.</h2>
+        <p class="sub-lead">Cada widget elige la suya con un clic derecho: el reloj en Aire y el calendario en Suizo, si te apetece.</p>
+      </div>
+      <div class="chips" role="group" aria-label="Elegir estética" data-chips>
+        <button type="button" data-tema="suizo" aria-pressed="false">Suizo</button>
+        <button type="button" data-tema="noche" aria-pressed="true">Noche</button>
+        <button type="button" data-tema="instrumento" aria-pressed="false">Instrumento</button>
+        <button type="button" data-tema="aire" aria-pressed="false">Aire</button>
+        <button type="button" data-tema="grotesca" aria-pressed="false">Grotesca</button>
+        <button type="button" data-tema="grotesca-negra" aria-pressed="false">Grotesca negra</button>
+      </div>
+      <p class="chip-nota" data-nota aria-live="polite">Noche: casi negro, cifras finas y un ámbar.</p>
+      <div class="mesa" data-mesa>
+        <img class="w2 ga" data-k="tiempo-1" src="/proyecto/afrwidgets/w/tiempo-1-noche.webp" width="720" height="340" alt="Tiempo, tamaño mediano">
+        <img class="w2 gb" data-k="calendario-0" src="/proyecto/afrwidgets/w/calendario-0-noche.webp" width="340" height="340" alt="Calendario, tamaño pequeño">
+        <img class="w2 gc" data-k="reloj-0" src="/proyecto/afrwidgets/w/reloj-0-noche.webp" width="340" height="340" alt="Reloj digital, tamaño pequeño">
+        <img class="w2 gd" data-k="bateria-0" src="/proyecto/afrwidgets/w/bateria-0-noche.webp" width="340" height="340" alt="Batería, tamaño pequeño">
+        <img class="w2 ge" data-k="foco-0" src="/proyecto/afrwidgets/w/foco-0-noche.webp" width="340" height="340" alt="Foco, tamaño pequeño">
+        <img class="w2 gf" data-k="progreso-1" src="/proyecto/afrwidgets/w/progreso-1-noche.webp" width="720" height="340" alt="Progreso del día, la semana, el mes y el año, tamaño mediano">
+      </div>
+    </section>
+
+    <section class="tile tile-parchment" id="widgets" aria-labelledby="widgets-titulo">
+      <div class="centro">
+        <h2 id="widgets-titulo">Trece widgets que encajan en la misma retícula.</h2>
+        <p class="sub-lead">Del tiempo y tu Google Calendar a la batería, la música o un pomodoro, cada uno en tamaño pequeño, mediano o grande.</p>
+      </div>
+      <ul class="rejilla" data-rejilla>
+        <li><img src="/proyecto/afrwidgets/w/tiempo-0-noche.webp" data-k="tiempo-0" width="340" height="340" alt="" loading="lazy"><h3>Tiempo</h3><p>Tu ciudad, hoy y cinco días</p></li>
+        <li><img src="/proyecto/afrwidgets/w/calendario-0-noche.webp" data-k="calendario-0" width="340" height="340" alt="" loading="lazy"><h3>Calendario</h3><p>Sincroniza con Google Calendar</p></li>
+        <li><img src="/proyecto/afrwidgets/w/disco-0-noche.webp" data-k="disco-0" width="340" height="340" alt="" loading="lazy"><h3>Disco</h3><p>Espacio libre de cada unidad</p></li>
+        <li><img src="/proyecto/afrwidgets/w/reloj-1-noche.webp" data-k="reloj-1" width="340" height="340" alt="" loading="lazy"><h3>Reloj</h3><p>Digital, analógico o en palabras</p></li>
+        <li><img src="/proyecto/afrwidgets/w/husos-1-noche.webp" data-k="husos-1" width="340" height="340" alt="" loading="lazy"><h3>Husos horarios</h3><p>Hasta seis ciudades</p></li>
+        <li><img src="/proyecto/afrwidgets/w/sistema-0-noche.webp" data-k="sistema-0" width="340" height="340" alt="" loading="lazy"><h3>Sistema</h3><p>CPU y memoria al momento</p></li>
+        <li><img src="/proyecto/afrwidgets/w/red-0-noche.webp" data-k="red-0" width="340" height="340" alt="" loading="lazy"><h3>Red</h3><p>Bajada y subida en directo</p></li>
+        <li><img src="/proyecto/afrwidgets/w/bateria-0-noche.webp" data-k="bateria-0" width="340" height="340" alt="" loading="lazy"><h3>Batería</h3><p>Carga y tiempo restante</p></li>
+        <li><img src="/proyecto/afrwidgets/w/musica-0-noche.webp" data-k="musica-0" width="340" height="340" alt="" loading="lazy"><h3>Música</h3><p>Spotify, el navegador o cualquier reproductor</p></li>
+        <li><img src="/proyecto/afrwidgets/w/foco-0-noche.webp" data-k="foco-0" width="340" height="340" alt="" loading="lazy"><h3>Foco</h3><p>Pomodoro con descansos</p></li>
+        <li><img src="/proyecto/afrwidgets/w/notas-0-noche.webp" data-k="notas-0" width="340" height="340" alt="" loading="lazy"><h3>Notas</h3><p>Una nota o una lista que tachas</p></li>
+        <li><img src="/proyecto/afrwidgets/w/progreso-0-noche.webp" data-k="progreso-0" width="340" height="340" alt="" loading="lazy"><h3>Progreso</h3><p>El año, el mes o una cuenta atrás</p></li>
+        <li><img src="/proyecto/afrwidgets/w/cielo-0-noche.webp" data-k="cielo-0" width="340" height="340" alt="" loading="lazy"><h3>Cielo</h3><p>Fase de la luna y horas de sol</p></li>
+      </ul>
+    </section>
+
+    <section class="tile tile-light" id="ligereza" aria-labelledby="ligereza-titulo">
+      <div class="centro">
+        <h2 id="ligereza-titulo">Ligero de verdad.</h2>
+        <p class="sub-lead">Sin navegador dentro. Cada widget es una ventana nativa de Windows dibujada con Direct2D, y sólo se repinta cuando cambia lo que enseña.</p>
+      </div>
+      <dl class="cifras">
+        <div><dt>Memoria con los trece widgets abiertos</dt><dd>6,1<span>&nbsp;MB</span></dd></div>
+        <div><dt>De un núcleo de procesador, de media</dt><dd>0,17<span>&nbsp;%</span></dd></div>
+        <div><dt>El programa entero, un solo archivo</dt><dd data-exe>960<span>&nbsp;KB</span></dd></div>
+      </dl>
+      <p class="metodo">Medido el 24 de noviembre de 2026 en un portátil con Intel Core i5-8300H y 16&nbsp;GB de RAM, con los trece widgets en pantalla durante dos minutos. La memoria es la que enseña el Administrador de tareas.</p>
+    </section>
+
+    <section class="tile tile-dark" id="conecta" aria-labelledby="conecta-titulo">
+      <div class="centro">
+        <h2 id="conecta-titulo">Tu calendario. Tu ciudad. Tu música.</h2>
+        <p class="sub-lead">Lo que no sale de Windows viene de donde tiene que venir, y nada más.</p>
+      </div>
+      <div class="dos">
+        <img class="w3" src="/proyecto/afrwidgets/w/calendario-2-noche.webp" width="720" height="740" alt="Calendario grande en Noche: noviembre de 2026 con los próximos eventos" loading="lazy">
+        <img class="w3" src="/proyecto/afrwidgets/w/tiempo-2-grotesca-negra.webp" width="720" height="740" alt="Tiempo grande en Grotesca negra: 14 grados en Madrid y la semana" loading="lazy">
+      </div>
+      <ul class="datos">
+        <li><h3>Google Calendar</h3><p>Entra con permiso de sólo lectura. El acceso se guarda cifrado en tu PC y los eventos van directos de Google a tu escritorio.</p></li>
+        <li><h3>El tiempo</h3><p>Viene de Open-Meteo. De tu equipo sólo sale la ciudad que eliges.</p></li>
+        <li><h3>Todo lo demás</h3><p>Disco, memoria, red, batería y música los lee Windows en local.</p></li>
+      </ul>
+    </section>
+
+    <section class="tile tile-parchment" id="instalar" aria-labelledby="instalar-titulo">
+      <div class="centro">
+        <h2 id="instalar-titulo">Instálalo en un minuto.</h2>
+      </div>
+      <ol class="pasos">
+        <li><h3>Descarga el instalador</h3><p>Se instala sólo para tu usuario, sin pedir permisos de administrador.</p></li>
+        <li><h3>Si aparece SmartScreen</h3><p>Pulsa «Más información» y luego «Ejecutar de todas formas». El instalador todavía no está firmado.</p></li>
+        <li><h3>Colócalos a tu gusto</h3><p>Arrástralos, se imantan a una rejilla. Clic derecho para cambiar estética, diseño y tamaño; añade más desde el icono de la bandeja.</p></li>
+      </ol>
+      <div class="acciones acciones-centro">
+        <a class="pill" href="/proyecto/afrwidgets/descargas/AFRWIDGETS-Setup-1.0.0.exe" download>Descargar AFRWIDGETS</a>
+      </div>
+      <p class="letra letra-centro">Versión 1.0.0 · Windows 10 y 11 de 64 bits · Licencia MIT</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie-in">
+      <p>AFRWIDGETS lo hace <a href="/">Pedro Gómez</a> con Rust, Win32 y Direct2D. Licencia MIT; el repositorio público está en preparación.</p>
+      <p>Foto de fondo: «Mountain Lake Sunset», de 420 Photography, en Wikimedia Commons (dominio público, CC0). Tipografía de los widgets Grotesca: Hanken Grotesk (OFL).</p>
+      <p><a href="/#proyectos">Volver a los proyectos</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,844 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T12:55:10+00:00",
+  "title": "Design System: AFRWIDGETS",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Azul de acción",
+        "canonical": "#0066cc",
+        "tonalRamp": [
+          "#000828",
+          "#002353",
+          "#044082",
+          "#165fb5",
+          "#2c81e8",
+          "#62a7ff",
+          "#94ccff",
+          "#c5f2ff"
+        ]
+      },
+      "primary-focus": {
+        "role": "primary",
+        "displayName": "Azul de foco",
+        "canonical": "#0071e3",
+        "tonalRamp": [
+          "#00072a",
+          "#002257",
+          "#003f88",
+          "#065ebc",
+          "#1f7ff1",
+          "#5ca6ff",
+          "#8fccff",
+          "#c1f2ff"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Azul encendido",
+        "canonical": "#0077ed",
+        "tonalRamp": [
+          "#00072b",
+          "#002158",
+          "#003e8a",
+          "#005ebf",
+          "#167ff4",
+          "#58a6ff",
+          "#8cccff",
+          "#c0f2ff"
+        ]
+      },
+      "primary-on-dark": {
+        "role": "primary",
+        "displayName": "Azul sobre negro",
+        "canonical": "#2997ff",
+        "tonalRamp": [
+          "#000928",
+          "#002453",
+          "#004282",
+          "#0061b5",
+          "#0683e9",
+          "#56a9ff",
+          "#8cceff",
+          "#bff3ff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#1d1d1f",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#252527",
+          "#424244",
+          "#616163",
+          "#828284",
+          "#a5a5a7",
+          "#c9c9cb",
+          "#eeeef1"
+        ]
+      },
+      "ink-80": {
+        "role": "neutral",
+        "displayName": "Tinta 80",
+        "canonical": "#333333",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ink-48": {
+        "role": "neutral",
+        "displayName": "Gris de apoyo",
+        "canonical": "#5f5f64",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#252529",
+          "#414146",
+          "#616166",
+          "#828287",
+          "#a4a4aa",
+          "#c8c8ce",
+          "#eeeef4"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Gris sobre negro",
+        "canonical": "#a1a1a6",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#252528",
+          "#414146",
+          "#616165",
+          "#828287",
+          "#a4a4a9",
+          "#c8c8ce",
+          "#eeeef3"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Lienzo",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "parchment": {
+        "role": "neutral",
+        "displayName": "Pergamino",
+        "canonical": "#f5f5f7",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#252526",
+          "#424243",
+          "#616163",
+          "#828284",
+          "#a5a5a7",
+          "#c9c9cb",
+          "#eeeef0"
+        ]
+      },
+      "tile": {
+        "role": "neutral",
+        "displayName": "Negro de banda",
+        "canonical": "#000000",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "footer-rule": {
+        "role": "neutral",
+        "displayName": "Filete del pie",
+        "canonical": "#d2d2d7",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#252528",
+          "#414146",
+          "#616165",
+          "#828286",
+          "#a4a4a9",
+          "#c8c8cd",
+          "#eeeef3"
+        ]
+      },
+      "chip-ring": {
+        "role": "neutral",
+        "displayName": "Anillo de chip",
+        "canonical": "#48484a",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#252527",
+          "#424244",
+          "#616163",
+          "#828284",
+          "#a5a5a7",
+          "#c9c9cb",
+          "#eeeef1"
+        ]
+      },
+      "desk-fallback": {
+        "role": "neutral",
+        "displayName": "Escritorio de reserva",
+        "canonical": "#2a1f1b",
+        "tonalRamp": [
+          "#120906",
+          "#2d221e",
+          "#4b3f3a",
+          "#6b5e59",
+          "#8d7f7a",
+          "#b0a19c",
+          "#d5c5c0",
+          "#faebe5"
+        ]
+      },
+      "suizo-panel": {
+        "role": "neutral",
+        "displayName": "Suizo · panel",
+        "canonical": "#f7f7f5",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252524",
+          "#424240",
+          "#616160",
+          "#828281",
+          "#a5a5a3",
+          "#c9c9c7",
+          "#eeeeec"
+        ]
+      },
+      "suizo-ink": {
+        "role": "neutral",
+        "displayName": "Suizo · tinta",
+        "canonical": "#111111",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "suizo-ink-2": {
+        "role": "neutral",
+        "displayName": "Suizo · tinta secundaria",
+        "canonical": "#5e5e5e",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "suizo-rule": {
+        "role": "neutral",
+        "displayName": "Suizo · filete",
+        "canonical": "#d9d9d6",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252523",
+          "#424240",
+          "#61615f",
+          "#828280",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#efefec"
+        ]
+      },
+      "suizo-accent": {
+        "role": "secondary",
+        "displayName": "Rojo suizo",
+        "canonical": "#e63312",
+        "tonalRamp": [
+          "#250000",
+          "#510000",
+          "#800500",
+          "#b31d00",
+          "#e73717",
+          "#ff7157",
+          "#ffa28a",
+          "#ffd2bd"
+        ]
+      },
+      "noche-panel": {
+        "role": "neutral",
+        "displayName": "Noche · panel",
+        "canonical": "#121214",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#252527",
+          "#424244",
+          "#616163",
+          "#828285",
+          "#a5a5a7",
+          "#c9c9cc",
+          "#eeeef1"
+        ]
+      },
+      "noche-ink": {
+        "role": "neutral",
+        "displayName": "Noche · tinta",
+        "canonical": "#f2f2ef",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252523",
+          "#424240",
+          "#61615f",
+          "#828280",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#efefec"
+        ]
+      },
+      "noche-ink-2": {
+        "role": "neutral",
+        "displayName": "Noche · tinta secundaria",
+        "canonical": "#8e8e93",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#252529",
+          "#414146",
+          "#616165",
+          "#828287",
+          "#a4a4a9",
+          "#c8c8ce",
+          "#eeeef3"
+        ]
+      },
+      "noche-rule": {
+        "role": "neutral",
+        "displayName": "Noche · filete",
+        "canonical": "#2a2a2f",
+        "tonalRamp": [
+          "#0b0b0f",
+          "#242429",
+          "#414147",
+          "#606166",
+          "#828288",
+          "#a4a4ab",
+          "#c8c8cf",
+          "#eeeef4"
+        ]
+      },
+      "noche-accent": {
+        "role": "secondary",
+        "displayName": "Ámbar de Noche",
+        "canonical": "#f5a524",
+        "tonalRamp": [
+          "#1a0500",
+          "#3e1b00",
+          "#653500",
+          "#8f5000",
+          "#ba6f00",
+          "#d89637",
+          "#f5be77",
+          "#ffe6b0"
+        ]
+      },
+      "instrumento-panel": {
+        "role": "neutral",
+        "displayName": "Instrumento · panel",
+        "canonical": "#e6e4df",
+        "tonalRamp": [
+          "#0c0b08",
+          "#262521",
+          "#43423e",
+          "#63615d",
+          "#84827e",
+          "#a7a5a0",
+          "#cbc9c4",
+          "#f0eee9"
+        ]
+      },
+      "instrumento-ink": {
+        "role": "neutral",
+        "displayName": "Instrumento · tinta",
+        "canonical": "#232323",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "instrumento-ink-2": {
+        "role": "neutral",
+        "displayName": "Instrumento · tinta secundaria",
+        "canonical": "#66635d",
+        "tonalRamp": [
+          "#0d0b07",
+          "#272520",
+          "#44423c",
+          "#64615b",
+          "#85827c",
+          "#a8a59e",
+          "#ccc9c2",
+          "#f2eee7"
+        ]
+      },
+      "instrumento-rule": {
+        "role": "neutral",
+        "displayName": "Instrumento · filete",
+        "canonical": "#cac7bf",
+        "tonalRamp": [
+          "#0d0b06",
+          "#27251f",
+          "#44423b",
+          "#64615a",
+          "#85827b",
+          "#a8a59d",
+          "#ccc9c1",
+          "#f1eee6"
+        ]
+      },
+      "instrumento-accent": {
+        "role": "secondary",
+        "displayName": "Naranja de Instrumento",
+        "canonical": "#ff6a00",
+        "tonalRamp": [
+          "#230000",
+          "#4c0400",
+          "#7a1a00",
+          "#ab3100",
+          "#dd4b00",
+          "#f97d40",
+          "#ffab7b",
+          "#ffd8b3"
+        ]
+      },
+      "aire-ink": {
+        "role": "neutral",
+        "displayName": "Aire · tinta",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "grotesca-panel": {
+        "role": "neutral",
+        "displayName": "Grotesca · panel",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "grotesca-ink": {
+        "role": "neutral",
+        "displayName": "Grotesca · tinta",
+        "canonical": "#1f201d",
+        "tonalRamp": [
+          "#0b0c09",
+          "#242522",
+          "#41423f",
+          "#60625e",
+          "#82837f",
+          "#a4a6a2",
+          "#c8cac6",
+          "#eeefeb"
+        ]
+      },
+      "grotesca-track": {
+        "role": "neutral",
+        "displayName": "Grotesca · pista",
+        "canonical": "#ecece8",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252522",
+          "#42423f",
+          "#61615e",
+          "#82827f",
+          "#a5a5a1",
+          "#c9c9c5",
+          "#efefeb"
+        ]
+      },
+      "grotesca-negra-track": {
+        "role": "neutral",
+        "displayName": "Grotesca negra · pista",
+        "canonical": "#393a35",
+        "tonalRamp": [
+          "#0b0c08",
+          "#252621",
+          "#42433d",
+          "#61625c",
+          "#82837d",
+          "#a4a6a0",
+          "#c9cac4",
+          "#eeefe9"
+        ]
+      },
+      "fosforito": {
+        "role": "tertiary",
+        "displayName": "Fosforito",
+        "canonical": "#00ff81",
+        "tonalRamp": [
+          "#001400",
+          "#003400",
+          "#005700",
+          "#007d12",
+          "#00a528",
+          "#00c661",
+          "#6ee693",
+          "#aeffc4"
+        ]
+      },
+      "warn-light": {
+        "role": "error",
+        "displayName": "Rojo de aviso",
+        "canonical": "#d12b0f",
+        "tonalRamp": [
+          "#240000",
+          "#4e0000",
+          "#7d1000",
+          "#af2711",
+          "#e24026",
+          "#fe755d",
+          "#ffa58f",
+          "#ffd4c1"
+        ]
+      },
+      "warn-dark": {
+        "role": "error",
+        "displayName": "Coral de aviso",
+        "canonical": "#ff6b4a",
+        "tonalRamp": [
+          "#220000",
+          "#4b0500",
+          "#791a03",
+          "#a93115",
+          "#db4b2a",
+          "#f77c60",
+          "#ffa991",
+          "#ffd7c2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "h1 del hero de la landing, una vez por página."
+      },
+      "headline": {
+        "displayName": "Titular de banda",
+        "purpose": "h2 centrado de cada banda."
+      },
+      "lead": {
+        "displayName": "Entradilla del hero",
+        "purpose": "Bajo el h1, en gris de apoyo, 30 em máx."
+      },
+      "sub-lead": {
+        "displayName": "Entradilla de banda",
+        "purpose": "Bajo cada h2, 34 em máx."
+      },
+      "figure": {
+        "displayName": "Cifra medida",
+        "purpose": "Cifras de ligereza, tabulares, unidad a 0,4 em en gris."
+      },
+      "title": {
+        "displayName": "Título",
+        "purpose": "Columnas de datos y pasos."
+      },
+      "title-sm": {
+        "displayName": "Título pequeño",
+        "purpose": "Nombre bajo cada miniatura de widget."
+      },
+      "body": {
+        "displayName": "Cuerpo",
+        "purpose": "Texto de lectura de la landing."
+      },
+      "caption": {
+        "displayName": "Pie",
+        "purpose": "Pies de tarjeta, chips, notas."
+      },
+      "fine": {
+        "displayName": "Letra pequeña",
+        "purpose": "Navegación, requisitos, método, pie de página."
+      },
+      "widget-num-suizo": {
+        "displayName": "Cifra Suizo",
+        "purpose": "Dato principal en Suizo: bloque de 700."
+      },
+      "widget-num-noche": {
+        "displayName": "Cifra Noche",
+        "purpose": "Dato principal en Noche: hilo de 250."
+      },
+      "widget-num-instrumento": {
+        "displayName": "Cifra Instrumento",
+        "purpose": "Dato principal en Instrumento (DIN de Windows)."
+      },
+      "widget-num-aire": {
+        "displayName": "Cifra Aire",
+        "purpose": "Dato principal en Aire, 200 con halo."
+      },
+      "widget-num-grotesca": {
+        "displayName": "Cifra Grotesca",
+        "purpose": "Cifras y palabras grandes en mayúsculas, Grotesca y Grotesca negra."
+      },
+      "widget-label": {
+        "displayName": "Rótulo en versalitas",
+        "purpose": "Rótulos de Suizo e Instrumento (Noche y Aire usan Segoe Text 600 con 0,11 y 0,14 em)."
+      },
+      "widget-label-grotesca": {
+        "displayName": "Rótulo en minúscula fina",
+        "purpose": "Rótulos de Grotesca: 10,5 × 1,22, sin interletraje."
+      },
+      "widget-text": {
+        "displayName": "Texto de widget",
+        "purpose": "Descripciones y eventos (Bahnschrift en Instrumento, Hanken Grotesk en Grotesca)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "product",
+        "value": "drop-shadow(3px 5px 30px rgb(0 0 0 / 0.22))",
+        "purpose": "Única sombra de la landing: bajo cada render de widget (filter, sigue la silueta)."
+      },
+      {
+        "name": "sub-frost",
+        "value": "background: rgb(255 255 255 / 0.78); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgb(0 0 0 / 0.08)",
+        "purpose": "Subbarra pegajosa esmerilada."
+      },
+      {
+        "name": "noche-border",
+        "value": "1px solid rgb(255 255 255 / 0.06)",
+        "purpose": "Borde del panel Noche en la app."
+      }
+    ],
+    "motion": [
+      {
+        "name": "press",
+        "value": "transform 120ms ease-out; scale(0.95)",
+        "purpose": "Pulsación de píldoras y chips."
+      },
+      {
+        "name": "state",
+        "value": "150ms ease-out",
+        "purpose": "Color de fondo y borde en hover; avance de la flecha del enlace (3 px)."
+      },
+      {
+        "name": "swap",
+        "value": "opacity 220ms ease-out (0.35)",
+        "purpose": "Cambio de estética en la mesa y la rejilla."
+      },
+      {
+        "name": "entra",
+        "value": "900ms cubic-bezier(0.16, 1, 0.3, 1), translateY(24px) scale(0.985), 120ms de retardo",
+        "purpose": "Entrada única de la pantalla del hero, sólo sin reduced-motion."
+      },
+      {
+        "name": "sube",
+        "value": "900ms cubic-bezier(0.16, 1, 0.3, 1), translateY(14px), escalonado 300 ms + 70 ms por widget",
+        "purpose": "Entrada de los widgets del hero."
+      },
+      {
+        "name": "widgets",
+        "value": "none",
+        "purpose": "Los widgets nativos no se animan: repintan sólo cuando cambia un dato."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "833px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Píldora principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal de la landing (descargar).",
+      "html": "<a class=\"ds-pill\" href=\"#\">Descargar gratis</a>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 22px;background:var(--primary,#0066cc);color:#fff;border-radius:9999px;font:400 17px/1.47 var(--text, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);letter-spacing:-0.022em;text-decoration:none;transition:background-color 150ms ease-out,transform 120ms ease-out}.ds-pill:hover{background:#0077ed}.ds-pill:active{transform:scale(0.95)}.ds-pill:focus-visible{outline:2px solid var(--primary-focus,#0071e3);outline-offset:3px}"
+    },
+    {
+      "name": "Píldora pequeña",
+      "kind": "button",
+      "refersTo": "button-primary-sm",
+      "description": "Descargar en la subbarra.",
+      "html": "<a class=\"ds-pill-sm\" href=\"#\">Descargar</a>",
+      "css": ".ds-pill-sm{display:inline-flex;align-items:center;min-height:28px;padding:4px 12px;background:var(--primary,#0066cc);color:#fff;border-radius:9999px;font:400 12px/1.5 var(--text, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);letter-spacing:-0.01em;text-decoration:none;transition:background-color 150ms ease-out}.ds-pill-sm:hover{background:#0077ed}.ds-pill-sm:focus-visible{outline:2px solid #0071e3;outline-offset:3px}"
+    },
+    {
+      "name": "Enlace con flecha",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción secundaria junto a una píldora.",
+      "html": "<a class=\"ds-enlace\" href=\"#\">Ver las estéticas</a>",
+      "css": ".ds-enlace{display:inline-flex;align-items:center;min-height:44px;font:400 17px/1.47 var(--text, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);color:var(--primary,#0066cc);text-decoration:none}.ds-enlace::after{content:'\\203A';margin-left:4px;font-size:1.15em;line-height:1;transition:transform 150ms ease-out}.ds-enlace:hover{text-decoration:underline;text-underline-offset:0.18em}.ds-enlace:hover::after{transform:translateX(3px)}.ds-enlace:focus-visible{outline:2px solid #0071e3;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Chips de estética",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Selector de estética sobre banda negra; el elegido lleva anillo azul.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"false\">Suizo</button><button class=\"ds-chip\" aria-pressed=\"true\">Noche</button><button class=\"ds-chip\" aria-pressed=\"false\">Grotesca</button></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px;padding:24px;background:#000}.ds-chip{font:400 14px/1 var(--text, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);letter-spacing:-0.016em;min-height:44px;padding:12px 18px;border-radius:9999px;background:transparent;color:#f5f5f7;border:1px solid #48484a;cursor:pointer;transition:border-color 150ms ease-out,background-color 150ms ease-out,transform 120ms ease-out}.ds-chip:hover{border-color:#86868b}.ds-chip:active{transform:scale(0.95)}.ds-chip[aria-pressed=true]{border:2px solid #0071e3;padding:11px 17px;background:#1d1d1f}.ds-chip:focus-visible{outline:2px solid #2997ff;outline-offset:3px}"
+    },
+    {
+      "name": "Tarjeta de paso",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Tarjeta blanca de 18 px sobre pergamino, sin sombra.",
+      "html": "<div class=\"ds-band\"><div class=\"ds-card\"><span class=\"ds-n\">1</span><h3>Descarga el instalador</h3><p>Se instala sólo para tu usuario, sin pedir permisos de administrador.</p></div></div>",
+      "css": ".ds-band{background:#f5f5f7;padding:32px}.ds-card{background:#fff;border-radius:18px;padding:28px 24px;max-width:300px;color:#1d1d1f}.ds-n{display:block;font:600 40px/1 var(--display, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);color:#0066cc;margin-bottom:18px}.ds-card h3{margin:0;font:600 21px/1.19 var(--display, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);letter-spacing:0.005em}.ds-card p{margin:10px 0 0;font:400 17px/1.47 var(--text, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);letter-spacing:-0.022em;color:#5f5f64}"
+    },
+    {
+      "name": "Subbarra",
+      "kind": "nav",
+      "refersTo": "nav-sub",
+      "description": "Subbarra pegajosa esmerilada con nombre, enlaces y píldora.",
+      "html": "<nav class=\"ds-sub\"><a class=\"ds-sub-nombre\" href=\"#\">AFRWIDGETS</a><span class=\"ds-sub-links\"><a href=\"#\">Estéticas</a><a href=\"#\">Widgets</a><a class=\"ds-pill-mini\" href=\"#\">Descargar</a></span></nav>",
+      "css": ".ds-sub{display:flex;align-items:center;justify-content:space-between;height:52px;padding:0 22px;background:rgb(255 255 255/0.78);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgb(0 0 0/0.08)}.ds-sub-nombre{color:#1d1d1f;font:600 21px/1 var(--display, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);letter-spacing:0.01em;text-decoration:none}.ds-sub-links{display:flex;align-items:center;gap:24px}.ds-sub-links a{color:#333;font:400 12px/1 var(--text, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif);text-decoration:none}.ds-sub-links a:hover{color:#0066cc}.ds-sub-links a:focus-visible{outline:2px solid #0071e3;outline-offset:3px}.ds-sub-links .ds-pill-mini{color:#fff;background:#0066cc;border-radius:9999px;padding:8px 12px}.ds-sub-links .ds-pill-mini:hover{background:#0077ed;color:#fff}"
+    },
+    {
+      "name": "Widget Suizo (S)",
+      "kind": "custom",
+      "refersTo": "widget-suizo",
+      "description": "Módulo S 170×170: rótulo en versalitas, cifra grande tabular, barra segmentada en acento.",
+      "html": "<div class=\"ds-w-suizo\"><span class=\"ds-l\">BATERÍA</span><span class=\"ds-num\">76<small>%</small></span><span class=\"ds-segs\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class=\"off\"></i><i class=\"off\"></i></span><span class=\"ds-t\">Quedan 4 h 35 min</span></div>",
+      "css": ".ds-w-suizo{width:170px;height:170px;box-sizing:border-box;padding:18px;background:#f7f7f5;border-radius:10px;color:#111;display:flex;flex-direction:column;font-family:'Segoe UI Variable Text',system-ui,sans-serif;font-variant-numeric:tabular-nums}.ds-l{font:600 10.5px/1 Bahnschrift,'DIN Alternate',sans-serif;letter-spacing:0.12em;color:#5e5e5e}.ds-num{font:700 56px/1 'Segoe UI Variable Display',system-ui,sans-serif;letter-spacing:-0.035em;margin-top:14px}.ds-num small{font-size:16px;font-weight:400;color:#5e5e5e;margin-left:4px}.ds-segs{display:flex;gap:3px;margin-top:6px}.ds-segs i{flex:1;height:12px;border-radius:2px;background:#e63312}.ds-segs i.off{background:#e4e4e0}.ds-t{margin-top:auto;font-size:12px;color:#5e5e5e}"
+    },
+    {
+      "name": "Widget Noche (M)",
+      "kind": "custom",
+      "refersTo": "widget-noche",
+      "description": "Módulo M 360×170 casi negro con borde al 6 %, cifra fina 250 y acento ámbar.",
+      "html": "<div class=\"ds-w-noche\"><span class=\"ds-l\">MADRID</span><span class=\"ds-num\">14°</span><span class=\"ds-t\">Parcialmente nublado · <b>Máx. 16°</b></span></div>",
+      "css": ".ds-w-noche{width:360px;height:170px;box-sizing:border-box;padding:18px;background:#121214;border:1px solid rgb(255 255 255/0.06);border-radius:20px;color:#f2f2ef;display:flex;flex-direction:column;font-family:'Segoe UI Variable Text',system-ui,sans-serif;font-variant-numeric:tabular-nums}.ds-w-noche .ds-l{font:600 10.5px/1 'Segoe UI Variable Text',system-ui,sans-serif;letter-spacing:0.11em;color:#8e8e93}.ds-w-noche .ds-num{font:250 64px/1 'Segoe UI Variable Display',system-ui,sans-serif;letter-spacing:-0.02em;margin-top:12px}.ds-w-noche .ds-t{margin-top:auto;font-size:13px;color:#8e8e93}.ds-w-noche b{color:#f5a524;font-weight:600}"
+    },
+    {
+      "name": "Widget Grotesca (M) con fosforito",
+      "kind": "custom",
+      "refersTo": "widget-grotesca",
+      "description": "Esquina viva, franja de acento de 7 px, rótulos en minúscula fina y la palabra en acento subrayada con fosforito detrás.",
+      "html": "<div class=\"ds-w-grot\"><span class=\"ds-l\">son las</span><span class=\"ds-big\">ONCE</span><span class=\"ds-big\"><mark>MENOS VEINTE</mark></span><span class=\"ds-l\">de la mañana</span></div>",
+      "css": ".ds-w-grot{position:relative;width:360px;height:170px;box-sizing:border-box;padding:18px 25px 18px 18px;background:#fff;color:#1f201d;display:flex;flex-direction:column;font-family:'Hanken Grotesk',system-ui,sans-serif}.ds-w-grot::after{content:'';position:absolute;top:0;right:0;width:7px;height:100%;background:#00ff81}.ds-w-grot .ds-l{font:400 12.8px/1 'Hanken Grotesk',sans-serif;color:rgb(31 32 29/0.68)}.ds-w-grot .ds-big{font:800 36px/1 'Hanken Grotesk',sans-serif;letter-spacing:-0.045em}.ds-w-grot .ds-big:first-of-type{margin-top:auto}.ds-w-grot .ds-l:last-child{margin-top:auto}.ds-w-grot mark{color:inherit;background:linear-gradient(transparent 50%,#00ff81 50%,#00ff81 92%,transparent 92%)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La vitrina y la pieza",
+    "overview": "**Creative North Star: \"La vitrina y la pieza\"**\n\nLa landing es una vitrina blanca, pergamino y negra que se aparta para que la pieza, el widget real, sea lo único con volumen. Bandas a sangre que alternan de tono, titulares de 600 apretados, un único azul para todo lo que se pulsa y aire de sobra. No hay ilustración ni maqueta: las imágenes son renders producidos por la propia app sobre una fotografía de escritorio.\n\nLos widgets son lo contrario de una vitrina: piezas gráficas planas, de diseñador, que viven sobre el fondo de pantalla de cualquiera. Comparten una retícula de tres módulos, un margen interior, texto colocado por línea base, cifras tabulares, filetes de 1 px y un solo color de acento por widget. Cada estética es un lenguaje completo (color, tipografía, interletraje, radio), no un cambio de paleta. El usuario lo dejó dicho: limpios y minimalistas, de diseñador gráfico, y sin copiar los widgets de Apple. La familia Grotesca nace de estaciondiseno.es: grotesca gruesa en mayúsculas, minúscula fina para los rótulos y el acento como rotulador fosforito.\n\nLo ligero es la función: ninguna decisión visual de los widgets puede costar memoria o CPU sostenida, así que no hay degradados animados, desenfoques ni sombras pintadas por widget (la única excepción es el halo de Aire, que es legibilidad, no decoración).",
+    "keyCharacteristics": [
+      "Landing: bandas a sangre blanco / pergamino / negro, un azul de acción, píldoras, tarjetas de 18 px, una sola sombra (la del producto).",
+      "Widgets: retícula S 170×170, M 360×170, L 360×370 con margen de 18; cifras grandes tabulares; rótulos pequeños; filetes de 1 px; un acento.",
+      "Seis estéticas que cambian tipografía, radio e interletraje, no sólo color.",
+      "Iconos dibujados con formas geométricas puras; nunca fuentes de iconos ni emoji."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "En la landing sólo es azul lo que se pulsa. Ningún titular, icono ni fondo es azul.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Accent Rule",
+        "body": "Cada widget tiene un único acento. Todo lo demás sale de tinta, tintas secundarias, filete y pista de su estética.",
+        "section": "colors"
+      },
+      {
+        "name": "The Safe Accent Rule",
+        "body": "Una estética clara sustituye un acento casi blanco por su acento por defecto, y Noche aclara un acento casi negro. Ningún acento puede desaparecer contra su panel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Baseline Rule",
+        "body": "En los widgets todo texto se coloca por su línea base (`text_base`), nunca por la caja: así una cifra de 64 y un rótulo de 10 se alinean como en una maqueta impresa.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Toda cifra es tabular: DirectWrite activa `tnum` en toda la tipografía de los widgets, y las cifras grandes de la landing llevan `font-variant-numeric: tabular-nums`. Un reloj o un contador no baila.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lowercase Grotesca Rule",
+        "body": "En Grotesca los rótulos van en minúscula fina y las palabras grandes en mayúscula gruesa. Nunca versalitas espaciadas en esa familia.",
+        "section": "typography"
+      },
+      {
+        "name": "The Three Modules Rule",
+        "body": "Un widget nuevo encaja en S, M o L. Si no cabe, se rediseña; no se inventa un cuarto tamaño.",
+        "section": "layout"
+      },
+      {
+        "name": "The Product Shadow Rule",
+        "body": "En la landing sólo hace sombra el producto. Ni tarjetas, ni píldoras, ni chips llevan sombra.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "usar en la landing sólo renders reales generados por la app (`--render-previews`), con la sombra de producto.",
+      "alternar bandas blanco, negro y pergamino a sangre, y centrar titular y entradilla en 760 px.",
+      "reservar el azul de acción (y el azul sobre negro en bandas negras) para lo pulsable.",
+      "encajar todo widget en S 170×170, M 360×170 o L 360×370 con margen de 18.",
+      "colocar el texto de los widgets por línea base y con cifras tabulares.",
+      "separar zonas de un widget con filetes de 1 px en el color de filete de su estética.",
+      "dibujar iconos con formas geométricas (círculos, rectángulos redondeados, triángulos, trazos).",
+      "usar un único acento por widget, de la lista cerrada de `theme.rs`.",
+      "en Grotesca, mayúscula gruesa para lo grande, minúscula fina para los rótulos y el acento como subrayado fosforito o franja de 7 px."
+    ],
+    "donts": [
+      "copiar los widgets de Apple: ni su panel translúcido ni su tipografía; los widgets son piezas de diseñador gráfico y cada estética tiene su propio radio.",
+      "poner sombra a tarjetas, píldoras o chips de la landing; sólo el producto la lleva.",
+      "añadir un segundo color de acción a la landing ni teñir titulares de azul.",
+      "usar fuentes de iconos, emoji ni imágenes para los iconos de los widgets.",
+      "animar nada en bucle en los widgets ni añadir efectos que repinten sin que cambie un dato.",
+      "usar versalitas espaciadas en Grotesca ni teñir texto de fosforito: el fosforito siempre va detrás del texto.",
+      "inventar un cuarto tamaño de widget fuera de la retícula.",
+      "usar maquetas, testimonios o cifras no medidas en la landing."
+    ]
+  }
+}

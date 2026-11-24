@@ -1,0 +1,44 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "site/public/proyecto/afrwidgets/index.html"
+        ],
+        "createdAt": "2026-11-24T08:59:43.724Z",
+        "reason": "Claude: falso positivo del escaneo estático (la hoja usa ruta absoluta /proyecto/afrwidgets/estilo.css que el hook no resuelve); 'impeccable detect' sobre la página renderizada en http://localhost:8032 no da este hallazgo"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "site/public/proyecto/afrwidgets/index.html"
+        ],
+        "createdAt": "2026-11-24T08:59:43.862Z",
+        "reason": "Claude: falso positivo del escaneo estático (la hoja usa ruta absoluta /proyecto/afrwidgets/estilo.css que el hook no resuelve); 'impeccable detect' sobre la página renderizada en http://localhost:8032 no da este hallazgo"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "files": [
+          "site/public/proyecto/afrwidgets/estilo.css"
+        ],
+        "createdAt": "2026-11-24T12:52:24.878Z",
+        "reason": "Claude: la landing sigue el estilo web de Apple que fijó el usuario; DESIGN.apple.md recomienda Inter como sustituto de SF Pro fuera de Apple"
+      },
+      {
+        "rule": "undersized-ui-text",
+        "value": "*",
+        "files": [
+          "site/public/proyecto/afrwidgets/index.html"
+        ],
+        "createdAt": "2026-11-24T12:52:25.021Z",
+        "reason": "Claude: falso positivo del escaneo estático sin la hoja (ruta absoluta); el texto más pequeño de la landing es 12 px y 'impeccable detect' sobre la página renderizada no da este hallazgo"
+      }
+    ]
+  }
+}

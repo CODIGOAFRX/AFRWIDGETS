@@ -1,0 +1,17 @@
+{
+  // Landing de AFRWIDGETS: sólo assets estáticos, servidos en pedrogomez.dev/proyecto/afrwidgets
+  // con una ruta de Worker en la zona (como consigna), sin tocar el vercel.json del portfolio.
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "afrwidgets",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "pedrogomez.dev/proyecto/afrwidgets*", "zone_name": "pedrogomez.dev" },
+    { "pattern": "www.pedrogomez.dev/proyecto/afrwidgets*", "zone_name": "pedrogomez.dev" }
+  ],
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}

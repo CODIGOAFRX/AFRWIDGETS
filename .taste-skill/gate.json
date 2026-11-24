@@ -1,0 +1,12 @@
+{
+ "history": [
+  {
+   "at": "2026-11-24T16:44:54.673Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  }
+ ]
+}

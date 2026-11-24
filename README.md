@@ -37,12 +37,14 @@ durante dos minutos:
 
 - Memoria (conjunto de trabajo privado, la del Administrador de tareas): **6,1 MB**
 - Procesador: **0,17 %** de un núcleo de media
-- `afrwidgets.exe`: **975 KB** (con las tipografías incrustadas) · instalador: **2,3 MB**
+- `afrwidgets.exe`: **976 KB** (con las tipografías incrustadas) · instalador: **2,3 MB**
 
 ## Uso
 
 - Arrastra un widget para moverlo (se imanta a una rejilla de 8 px).
 - Clic derecho sobre un widget: estética, diseño, color de acento, tamaño y opciones propias.
+- «Colocar en la pantalla» lo lleva a una de nueve posiciones: el centro, centrado arriba o abajo, las esquinas
+  y los lados, siempre dentro del área libre de la barra de tareas.
 - Icono de la bandeja: añadir widgets, bloquear posiciones, iniciar con Windows, recolocar y salir.
 - Configuración en `%APPDATA%\AFRWIDGETS\config.json`.
 

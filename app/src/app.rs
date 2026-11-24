@@ -221,6 +221,20 @@ pub fn run() -> Result<()> {
     Ok(())
 }
 
+/// Posiciones fijas del menú «Colocar en la pantalla»: nombre y alineación horizontal y vertical
+/// (0 = izquierda o arriba, 1 = centro, 2 = derecha o abajo).
+const PLACES: [(&str, u8, u8); 9] = [
+    ("Arriba a la izquierda", 0, 0),
+    ("Arriba en el centro", 1, 0),
+    ("Arriba a la derecha", 2, 0),
+    ("A la izquierda", 0, 1),
+    ("En el centro", 1, 1),
+    ("A la derecha", 2, 1),
+    ("Abajo a la izquierda", 0, 2),
+    ("Abajo en el centro", 1, 2),
+    ("Abajo a la derecha", 2, 2),
+];
+
 fn work_area() -> RECT {
     let mut rc = RECT::default();
     unsafe {
@@ -290,6 +304,31 @@ impl App {
             let _ = SetWindowPos(hwnd, HWND_BOTTOM, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOACTIVATE);
         }
         self.ensure_visible(id);
+    }
+
+    /// Lleva el widget a una de las nueve posiciones del área de trabajo de su pantalla (sin la barra de tareas).
+    fn place(&mut self, id: u32, h: u8, v: u8) {
+        let Some(win) = self.wins.get(&id) else { return };
+        let (mut rc, mut mi) = (RECT::default(), MONITORINFO { cbSize: std::mem::size_of::<MONITORINFO>() as u32, ..Default::default() });
+        unsafe {
+            let _ = GetWindowRect(win.hwnd, &mut rc);
+            let mon = MonitorFromWindow(win.hwnd, MONITOR_DEFAULTTONEAREST);
+            if !GetMonitorInfoW(mon, &mut mi).as_bool() {
+                mi.rcWork = work_area();
+            }
+        }
+        let (ww, wh, wa) = (rc.right - rc.left, rc.bottom - rc.top, mi.rcWork);
+        let margin = (24.0 * win.scale.max(1.0)) as i32;
+        let along = |a: u8, lo: i32, hi: i32, size: i32| match a {
+            0 => lo + margin,
+            1 => lo + (hi - lo - size) / 2,
+            _ => hi - margin - size,
+        };
+        let (x, y) = (along(h, wa.left, wa.right, ww), along(v, wa.top, wa.bottom, wh));
+        if let Some(w) = self.wcfg_mut(id) {
+            w.x = x;
+            w.y = y;
+        }
     }
 
     /// Si un widget quedó fuera de todas las pantallas (otro monitor desconectado), lo trae de vuelta.
@@ -740,6 +779,14 @@ impl App {
             if !matches!(meta.kind, Kind::Disk | Kind::System | Kind::Net | Kind::Battery | Kind::Media) {
                 append(m, MF_SEPARATOR, 0, "");
             }
+            let pos = CreatePopupMenu().ok()?;
+            for (i, (name, _, _)) in PLACES.iter().enumerate() {
+                if i % 3 == 0 && i > 0 {
+                    append(pos, MF_SEPARATOR, 0, "");
+                }
+                append(pos, MF_STRING, 1700 + i, name);
+            }
+            append(m, MF_POPUP, pos.0 as usize, "Colocar en la pantalla");
             append(m, MF_STRING, 1601, "Duplicar");
             append(m, MF_STRING | checked(self.cfg.locked), 1602, "Bloquear posiciones");
             append(m, MF_STRING, 1600, "Quitar widget");
@@ -853,6 +900,7 @@ fn widget_cmd(id: u32, cmd: usize) {
                 a.fetch_calendar();
             }
             1602 => a.cfg.locked = !a.cfg.locked,
+            1700..=1708 => a.place(id, PLACES[cmd - 1700].1, PLACES[cmd - 1700].2),
             _ => {}
         }
         if recreate {

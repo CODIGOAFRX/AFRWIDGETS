@@ -64,7 +64,7 @@ pub const KINDS: [Meta; 13] = [
     Meta { kind: Kind::Weather, key: "tiempo", name: "Tiempo", layouts: &[("Pequeño", S), ("Mediano", M), ("Grande", L)] },
     Meta { kind: Kind::Disk, key: "disco", name: "Disco", layouts: &[("Pequeño", S), ("Mediano", M)] },
     Meta { kind: Kind::Calendar, key: "calendario", name: "Calendario", layouts: &[("Pequeño", S), ("Mediano", M), ("Grande", L)] },
-    Meta { kind: Kind::Clock, key: "reloj", name: "Reloj", layouts: &[("Digital", S), ("Analógico", S), ("En palabras", M)] },
+    Meta { kind: Kind::Clock, key: "reloj", name: "Reloj", layouts: &[("Digital", M), ("Analógico", S), ("En palabras", M), ("Digital en columna", S), ("Alargado", M)] },
     Meta { kind: Kind::World, key: "husos", name: "Husos horarios", layouts: &[("Mediano", M), ("Pequeño", S)] },
     Meta { kind: Kind::System, key: "sistema", name: "Sistema (CPU y RAM)", layouts: &[("Pequeño", S), ("Mediano", M)] },
     Meta { kind: Kind::Net, key: "red", name: "Red", layouts: &[("Pequeño", S), ("Mediano", M)] },

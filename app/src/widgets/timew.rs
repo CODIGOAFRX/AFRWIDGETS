@@ -5,7 +5,7 @@ use std::f32::consts::PI;
 use super::{Action, Ctx};
 use crate::config::WidgetCfg;
 use crate::data::{astro, tz, CalState};
-use crate::gfx::{Align, Color};
+use crate::gfx::{Align, Color, Font};
 use crate::theme::ThemeId;
 use crate::time::{self, capitalize, hhmm, Now, DIAS, DIAS_CORTOS, MESES};
 
@@ -64,7 +64,32 @@ pub fn clock(x: &Ctx) {
     let (c, s, n) = (x.c, &x.s, &x.d.now);
     let (w, h, p) = (x.W, x.H, x.p);
     match x.layout() {
+        // Pantalla de bloqueo: la fecha arriba y la hora entera en una línea, centradas, en seminegrita.
         0 => {
+            let avail = w - 2.0 * p;
+            let date = format!("{}, {} de {}", capitalize(DIAS[n.wd as usize]), n.d, MESES[(n.mo - 1) as usize]);
+            x.strong(&date, p, p + 14.0, avail, 14.0, s.ink2, Align::C);
+            let t = if x.w.b("segundos") { format!("{}:{:02}", hhmm(n.h, n.mi), n.s) } else { hhmm(n.h, n.mi) };
+            let probe = if t.len() > 5 { "00:00:00" } else { "00:00" };
+            // Inter Display seminegrita, la más cercana a la SF del iPhone.
+            let f = |size: f32| Font::new(crate::gfx::RELOJ, size, 400).tracked(-0.02);
+            let size = (100.0 * avail * 0.86 / c.measure(probe, f(100.0)).0).min(104.0);
+            c.text_base(&t, p, h - p - 6.0, avail, f(size), s.ink, Align::C);
+        }
+        // Alargado: Big Shoulders, cifras altas y estrechas de verdad que llenan el widget, con el día encima.
+        4 => {
+            let avail = w - 2.0 * p;
+            let dia = DIAS[n.wd as usize];
+            let corto: String = dia.chars().take(3).collect();
+            x.strong(&format!("{} {}", capitalize(&corto), n.d), p, p + 12.0, avail, 14.0, s.ink2, Align::C);
+            let fam = if s.num(10.0).weight >= 600 { crate::gfx::ALTO_GRUESO } else { crate::gfx::ALTO_FINO };
+            let f = |size: f32| Font::new(fam, size, 400);
+            // Las cifras llenan el alto que queda bajo la fecha (altura de las cifras de Big Shoulders: 0,8 del cuerpo).
+            let (top, bottom) = (p + 26.0, h - p + 2.0);
+            let size = (100.0 * avail * 0.96 / c.measure("00:00", f(100.0)).0).min((bottom - top) / 0.8);
+            c.text_base(&hhmm(n.h, n.mi), p, bottom, avail, f(size), s.ink, Align::C);
+        }
+        3 => {
             x.label(&format!("{} {}", DIAS[n.wd as usize], n.d), p, p + 9.0, w - 2.0 * p, s.ink2, Align::L);
             if x.w.b("segundos") {
                 x.label(&format!("{:02}", n.s), p, p + 9.0, w - 2.0 * p, s.accent, Align::R);

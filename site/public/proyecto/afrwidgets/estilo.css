@@ -252,3 +252,12 @@ h2 { font: 600 clamp(34px, 4.6vw, 56px)/1.07 var(--display); letter-spacing: -0.
 }
 @keyframes entra { from { opacity: 0; transform: translateY(24px) scale(0.985); } }
 @keyframes sube { from { opacity: 0; transform: translateY(14px); } }
+
+/* Página de privacidad: texto largo a una columna de lectura. */
+.legal { max-width: 692px; margin: 0 auto; }
+.legal h1 { font: 600 clamp(34px, 4.6vw, 48px)/1.08 var(--display); letter-spacing: -0.015em; margin: 0 0 8px; }
+.legal .fecha { color: var(--ink-48); font-size: 14px; margin: 0 0 40px; }
+.legal h2 { font: 600 24px/1.17 var(--display); letter-spacing: 0.005em; margin: 40px 0 10px; }
+.legal p, .legal li { font-size: 17px; line-height: 1.47; color: var(--ink-80); }
+.legal ul { padding-left: 1.2em; }
+.legal li + li { margin-top: 6px; }

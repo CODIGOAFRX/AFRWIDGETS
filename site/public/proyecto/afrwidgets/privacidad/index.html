@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidad · AFRWIDGETS</title>
+  <meta name="description" content="Qué datos usa AFRWIDGETS, dónde se guardan y cómo retirar el acceso a Google Calendar.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/proyecto/afrwidgets/icon-64.png" type="image/png">
+  <link rel="stylesheet" href="/proyecto/afrwidgets/estilo.css?v=15">
+</head>
+<body>
+  <a class="saltar" href="#privacidad">Saltar al contenido</a>
+
+  <nav class="global" aria-label="Sitio">
+    <div class="global-in">
+      <a href="/">pedrogomez.dev</a>
+      <a href="/#proyectos">Proyectos</a>
+    </div>
+  </nav>
+
+  <nav class="sub" aria-label="AFRWIDGETS">
+    <div class="sub-in">
+      <a class="sub-nombre" href="/proyecto/afrwidgets/">AFRWIDGETS</a>
+      <div class="sub-links">
+        <a class="pill pill-sm" href="/proyecto/afrwidgets/descargas/AFRWIDGETS-Setup-1.0.0.exe" download>Descargar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="tile tile-light" id="privacidad">
+      <article class="legal">
+        <h1>Privacidad</h1>
+        <p class="fecha">Actualizada el 24 de noviembre de 2026</p>
+
+        <p>AFRWIDGETS es una app de escritorio para Windows hecha por Pedro Gómez. Funciona en tu ordenador y no tiene
+          servidor propio: no recojo, no guardo y no veo ningún dato tuyo.</p>
+
+        <h2>Google Calendar</h2>
+        <p>Si conectas el widget de calendario, la app te pide permiso de <strong>sólo lectura</strong> sobre tus
+          calendarios (<code>calendar.readonly</code>). Con él:</p>
+        <ul>
+          <li>Lee la lista de tus calendarios (sólo su identificador y su color) y los eventos de los próximos días para pintarlos en el escritorio.</li>
+          <li>No crea, cambia ni borra nada, y no lee tu correo, tus contactos ni otros datos de tu cuenta.</li>
+          <li>Los eventos van directos de Google a tu PC. No pasan por ningún servidor mío ni de terceros.</li>
+          <li>El token de acceso se guarda cifrado en tu equipo con la protección de datos de Windows (DPAPI), sólo
+            legible por tu usuario.</li>
+          <li>No se vende, no se comparte y no se usa para publicidad ni para entrenar modelos de IA.</li>
+        </ul>
+        <p>El uso que hace AFRWIDGETS de la información recibida de las API de Google se ajusta a la
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los
+          Servicios de las API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+        <h2>Tiempo</h2>
+        <p>Para el widget del tiempo, la app envía a <a href="https://open-meteo.com">Open-Meteo</a> la ciudad o las
+          coordenadas que eliges. No envía nada más.</p>
+
+        <h2>Todo lo demás</h2>
+        <p>Disco, memoria, red, batería, música, notas y pomodoro se leen o se guardan sólo en tu PC, en
+          <code>%APPDATA%\AFRWIDGETS</code>. La app no lleva analítica ni telemetría.</p>
+
+        <h2>Cómo retirar el acceso</h2>
+        <ul>
+          <li>Desde la app: clic derecho en el calendario y «Desconectar Google». Se borra el token guardado.</li>
+          <li>Desde Google: en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+            quita AFRWIDGETS.</li>
+          <li>Al desinstalar AFRWIDGETS se borra su carpeta de configuración.</li>
+        </ul>
+
+        <h2>Contacto</h2>
+        <p>Para cualquier duda sobre estos datos, escríbeme desde <a href="/">pedrogomez.dev</a>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie-in">
+      <p>AFRWIDGETS lo hace <a href="/">Pedro Gómez</a>. Licencia MIT.</p>
+      <p><a href="/proyecto/afrwidgets/">Volver a AFRWIDGETS</a></p>
+    </div>
+  </footer>
+</body>
+</html>

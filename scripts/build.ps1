@@ -1,8 +1,16 @@
 ﻿# Compila AFRWIDGETS, le pone icono y manifiesto, genera los renders y el instalador.
 # Uso: powershell -ExecutionPolicy Bypass -File scripts/build.ps1
-# Para incluir un cliente OAuth de Google: define antes AFR_GOOGLE_CLIENT_ID y AFR_GOOGLE_CLIENT_SECRET.
+# Cliente OAuth de Google: se toma de AFR_GOOGLE_CLIENT_ID / AFR_GOOGLE_CLIENT_SECRET o, si no están,
+# de google-oauth.local.json en la raíz (fuera de git).
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
+$oauth = Join-Path $root "google-oauth.local.json"
+if (-not $env:AFR_GOOGLE_CLIENT_ID -and (Test-Path $oauth)) {
+  $o = Get-Content $oauth -Raw | ConvertFrom-Json
+  $env:AFR_GOOGLE_CLIENT_ID = $o.client_id
+  $env:AFR_GOOGLE_CLIENT_SECRET = $o.client_secret
+  "Cliente OAuth de Google: incluido"
+}
 $cargo = Join-Path $env:USERPROFILE ".cargo\bin\cargo.exe"
 $iscc = Join-Path $env:LOCALAPPDATA "Programs\Inno Setup 6\ISCC.exe"
 $rcedit = Join-Path $root "tools\node_modules\rcedit\bin\rcedit-x64.exe"

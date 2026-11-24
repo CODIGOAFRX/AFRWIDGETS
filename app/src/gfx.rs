@@ -88,7 +88,17 @@ pub const DISPLAY: &str = "Segoe UI Variable Display";
 pub const ICONS: &str = "Segoe Fluent Icons";
 /// Grotesca incrustada en el exe (Hanken Grotesk, licencia OFL): no depende de lo que tenga instalado el PC.
 pub const GROTESK: &str = "Hanken Grotesk";
-static GROTESK_TTF: &[u8] = include_bytes!("../assets/HankenGrotesk.ttf");
+/// Relojes: Big Shoulders (alta y estrecha) e Inter Display, recortadas a cifras y dos puntos
+/// (`scripts/fuentes_reloj.py`, licencia OFL).
+pub const ALTO_FINO: &str = "AFR Alto Fino";
+pub const ALTO_GRUESO: &str = "AFR Alto Grueso";
+pub const RELOJ: &str = "AFR Reloj";
+static PRIVATE_TTF: [(&str, &[u8]); 4] = [
+    (GROTESK, include_bytes!("../assets/HankenGrotesk.ttf")),
+    (ALTO_FINO, include_bytes!("../assets/reloj-alto-fino.ttf")),
+    (ALTO_GRUESO, include_bytes!("../assets/reloj-alto-grueso.ttf")),
+    (RELOJ, include_bytes!("../assets/reloj-minimal.ttf")),
+];
 
 pub struct Gfx {
     pub d2d: ID2D1Factory,
@@ -150,7 +160,7 @@ impl Gfx {
         }
         let fam = HSTRING::from(family);
         let t = unsafe {
-            let coll = if family == GROTESK { self.private.as_ref() } else { None };
+            let coll = if PRIVATE_TTF.iter().any(|p| p.0 == family) { self.private.as_ref() } else { None };
             self.dw
                 .CreateTextFormat(
                     &fam,
@@ -237,11 +247,11 @@ fn private_fonts(dw: &IDWriteFactory) -> Option<IDWriteFontCollection> {
         let f5: IDWriteFactory5 = dw.cast().ok()?;
         let loader = f5.CreateInMemoryFontFileLoader().ok()?;
         f5.RegisterFontFileLoader(&loader).ok()?;
-        let file = loader
-            .CreateInMemoryFontFileReference(&f5, GROTESK_TTF.as_ptr() as *const _, GROTESK_TTF.len() as u32, None)
-            .ok()?;
         let builder = f5.CreateFontSetBuilder().ok()?;
-        builder.AddFontFile(&file).ok()?;
+        for (_, ttf) in PRIVATE_TTF.iter() {
+            let file = loader.CreateInMemoryFontFileReference(&f5, ttf.as_ptr() as *const _, ttf.len() as u32, None).ok()?;
+            builder.AddFontFile(&file).ok()?;
+        }
         let set = builder.CreateFontSet().ok()?;
         let coll = f5.CreateFontCollectionFromFontSet(&set).ok()?;
         coll.cast().ok()
